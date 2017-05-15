@@ -260,7 +260,7 @@ export default class Dates extends Component {
     };
 
     return (
-      <View style={styles.calendar}>
+      <View style={[styles.calendar, this.props.style? this.props.style : {}]}>
         <View style={styles.heading}>
           <TouchableOpacity onPress={previousMonth}>
             <Text>{'< Previous'}</Text>
